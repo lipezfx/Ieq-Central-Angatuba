@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram — IEQ Central</title>
+  <meta name="description" content="Siga os perfis do IEQ Central no Instagram." />
+  <link rel="icon" href="fotos/icon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Syne:wght@700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo" aria-label="IEQ Central — Início">
+      <svg class="logo-cross" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="17" y="4" width="6" height="32" rx="1" fill="#F18805"/>
+        <rect x="8" y="13" width="24" height="6" rx="1" fill="#F18805"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">IEQ Central</span>
+        <span class="logo-sub">Angatuba SP</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#fotos">Fotos</a>
+      <a href="index.html#nos-conheca">Nos Conheça</a>
+      <a href="index.html#cultos">Cultos</a>
+      <a href="index.html#contato">Fale Conosco</a>
+    </nav>
+
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileNavDrawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Navegação mobile">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#fotos">Fotos</a>
+    <a href="index.html#nos-conheca">Nos Conheça</a>
+    <a href="index.html#cultos">Cultos</a>
+    <a href="index.html#contato">Fale Conosco</a>
+  </nav>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="igHeading">
+      <span class="page-hero-eyebrow"><i class="fa-brands fa-instagram"></i> Redes Sociais</span>
+      <h1 class="page-hero-title" id="igHeading">
+        NOSSO<br /><span>Instagram</span>
+      </h1>
+      <p class="page-hero-sub">
+        Siga os perfis oficiais do IEQ Central e fique por dentro da nossa programação, devocional diário e registros dos cultos.
+      </p>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────── -->
+    <!--  SEÇÃO DE PERFIS — Adicione/edite os cards abaixo       -->
+    <!--  Para adicionar um novo perfil:                         -->
+    <!--  1. Copie um bloco <a class="ig-profile-card"> ... </a> -->
+    <!--  2. Cole antes do fechamento </div> da .ig-profiles-grid -->
+    <!--  3. Atualize o href, nome, handle e descrição           -->
+    <!-- ─────────────────────────────────────────────────────── -->
+
+    <section class="ig-grid-section" aria-labelledby="perfisHeading">
+      <h2 id="perfisHeading">Perfis Oficiais</h2>
+      <div class="ig-profiles-grid">
+
+        <!-- Card 1: Perfil Principal -->
+        <a href="https://www.instagram.com/quadrangularcentralangatuba" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="Quadrangular Central Angatuba no Instagram">
+          <div class="ig-profile-avatar">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <div class="ig-profile-name">IEQ Central Angatuba</div>
+            <div class="ig-profile-handle">@quadrangularcentralangatuba</div>
+          </div>
+          <p class="ig-profile-desc">
+            Perfil oficial da IEQ Central de Angatuba. Programação, cultos, avisos e muito mais.
+          </p>
+          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+        </a>
+
+        <!-- Card 2: Juventude -->
+        <a href="https://www.instagram.com/juventude_ieq_central" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="Juventude IEQ Central no Instagram">
+          <div class="ig-profile-avatar">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div>
+            <div class="ig-profile-name">Juventude IEQ Central</div>
+            <div class="ig-profile-handle">@juventude_ieq_central</div>
+          </div>
+          <p class="ig-profile-desc">
+            Ministério jovem da IEQ Central. Eventos, células, retiros e conteúdo para a nova geração.
+          </p>
+          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+        </a>
+
+        <!-- Card 3: Grupo Missionário Crianças -->
+        <a href="https://www.instagram.com/ieq.grupo.missionario.criancas" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Grupo Missionário Crianças no Instagram">
+          <div class="ig-profile-avatar">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <div class="ig-profile-name">GMC — Crianças</div>
+            <div class="ig-profile-handle">@ieq.grupo.missionario.criancas</div>
+          </div>
+          <p class="ig-profile-desc">
+            Ministério infantil e escola bíblica. Atividades, histórias bíblicas e momentos especiais das crianças.
+          </p>
+          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+        </a>
+
+        <!-- Card 4: Grupo Missionário Mulheres -->
+        <a href="https://www.instagram.com/ieq.grupo.missionario.mulheres" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Grupo Missionário Mulheres no Instagram">
+          <div class="ig-profile-avatar">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <div class="ig-profile-name">GMM — Mulheres</div>
+            <div class="ig-profile-handle">@ieq.grupo.missionario.mulheres</div>
+          </div>
+          <p class="ig-profile-desc">
+            Ministério de mulheres. Encontros, conteúdo sobre família, fé e vida cristã.
+          </p>
+          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+        </a>
+
+        <!-- Card 5: IEQ Central Angatuba (perfil oficial alternativo) -->
+        <a href="https://www.instagram.com/ieqcentralangatuba" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Central Angatuba no Instagram">
+          <div class="ig-profile-avatar">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <div>
+            <div class="ig-profile-name">IEQ Central Angatuba</div>
+            <div class="ig-profile-handle">@ieqcentralangatuba</div>
+          </div>
+          <p class="ig-profile-desc">
+            Missões, evangelismo e registros das ações da nossa comunidade em Angatuba e região.
+          </p>
+          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back link -->
+  <a href="index.html" class="ig-back-link">
+    <i class="fa-solid fa-arrow-left"></i> Voltar para o início
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="17" y="4" width="6" height="32" rx="1" fill="#F18805"/>
+          <rect x="8" y="13" width="24" height="6" rx="1" fill="#F18805"/>
+        </svg>
+        <span class="footer-logo-name">IEQ Central</span>
+      </div>
+      <p class="footer-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Navegação do rodapé">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#fotos">Fotos</a></li>
+        <li><a href="index.html#nos-conheca">Nos Conheça</a></li>
+        <li><a href="index.html#cultos">Cultos</a></li>
+        <li><a href="index.html#contato">Fale Conosco</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-links">
+      <h4>Cultos</h4>
+      <ul>
+        <li>Ter: 20h &mdash; Encontro com Deus</li>
+        <li>Qui: 20h &mdash; Quinta da Vitória</li>
+        <li>Sáb: 20h &mdash; Sábado da Adoração</li>
+        <li>Dom: 19h &mdash; Culto da Família</li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 IEQ Central &mdash; Angatuba SP</span>
+      <span>Ministério Forte</span>
+      <span>Desenvolvido por <a href="https://www.instagram.com/lipee.zfx" target="_blank" rel="noopener noreferrer" class="footer-devcoder">DevCoder</a></span>
+    </div>
+  </footer>
+
+  <a href="#" class="back-top" id="backTop" aria-label="Voltar ao topo">&#8593;</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

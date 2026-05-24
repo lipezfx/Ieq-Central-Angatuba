@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEQ Central — Ministério Forte</title>
+  <meta name="description" content="IEQ Central — Angatuba SP. Ministério Forte." />
+  <link rel="icon" href="fotos/icon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Syne:wght@700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header>
+    <a href="#home" class="logo" aria-label="IEQ Central — Início">
+      <svg class="logo-cross" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="17" y="4" width="6" height="32" rx="1" fill="#F18805"/>
+        <rect x="8" y="13" width="24" height="6" rx="1" fill="#F18805"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">IEQ Central</span>
+        <span class="logo-sub">Angatuba SP</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#nos-conheca">Nos Conheça</a>
+      <a href="#cultos">Cultos</a>
+      <a href="#contato">Fale Conosco</a>
+    </nav>
+
+    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileNavDrawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Navegação mobile">
+    <a href="#home">Home</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#nos-conheca">Nos Conheça</a>
+    <a href="#cultos">Cultos</a>
+    <a href="#contato">Fale Conosco</a>
+    <div class="mobile-drawer-cta">
+      <button class="btn-cta btn-cta--accent" id="visitarBtn">Visitar a Igreja</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="heroHeading">
+      <div class="hero-content">
+        <span class="hero-eyebrow"><i class="fa-solid fa-cross"></i> Bem-vindo à nossa família</span>
+        <h1 class="hero-title" id="heroHeading">
+          UM<br /><span>MINISTÉRIO</span>FORTE
+        </h1>
+        <p class="hero-subtitle">
+          A IEQ Central existe para conectar pessoas a Deus, fortalecer famílias e impactar nossa cidade através do Evangelho de Jesus Cristo.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-cta btn-cta--primary" id="visitarHeroBtn">Planejar Visita</button>
+          <a href="#nos-conheca" class="btn-cta btn-cta--highlight">Nos Conheça</a>
+        </div>
+        <blockquote class="hero-verse">
+          "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito."
+          <cite>— João 3:16</cite>
+        </blockquote>
+      </div>
+
+      <div class="hero-img" role="img" aria-label="Comunidade reunida em louvor na igreja">
+        <div class="sticker" aria-hidden="true">TODOS<br />SÃO<br />BEM-VINDOS</div>
+        <div class="floating-tag" style="top:18%; left:8%;">Fé &amp; Amor</div>
+        <div class="floating-tag" style="bottom:28%; right:15%;">Palavra Viva</div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-content">
+        &nbsp; IEQ Central — ANGATUBA SP · TERÇA: ENCONTRO COM DEUS 20H · QUINTA: QUINTA DA VITÓRIA 20H · SÁBADO: ADORAÇÃO 20H · DOMINGO: CULTO DA FAMÍLIA 19H · IEQ Central — ANGATUBA SP · TERÇA: ENCONTRO COM DEUS 20H · QUINTA: QUINTA DA VITÓRIA 20H · SÁBADO: ADORAÇÃO 20H · DOMINGO: CULTO DA FAMÍLIA 19H &nbsp;
+      </div>
+    </div>
+
+    <!-- Programação -->
+    <section class="cultos-section" id="cultos" aria-labelledby="cultosHeading">
+      <div class="section-header">
+        <h2 class="section-title" id="cultosHeading">PROGRAMAÇÃO</h2>
+        <a href="#contato" class="section-link">Fale conosco &rarr;</a>
+      </div>
+      <div class="cultos-grid">
+        <div class="culto-card fade-in">
+          <div class="culto-card-accent"></div>
+          <div class="culto-card-day">Terça-feira</div>
+          <div class="culto-card-name">Encontro com Deus</div>
+          <div class="culto-card-time"><i class="fa-regular fa-clock"></i> 20:00</div>
+        </div>
+        <div class="culto-card fade-in">
+          <div class="culto-card-accent"></div>
+          <div class="culto-card-day">Quinta-feira</div>
+          <div class="culto-card-name">Quinta da Vitória</div>
+          <div class="culto-card-time"><i class="fa-regular fa-clock"></i> 20:00</div>
+        </div>
+        <div class="culto-card fade-in">
+          <div class="culto-card-accent"></div>
+          <div class="culto-card-day">Sábado</div>
+          <div class="culto-card-name">Sábado da Adoração</div>
+          <div class="culto-card-time"><i class="fa-regular fa-clock"></i> 20:00</div>
+        </div>
+        <div class="culto-card fade-in">
+          <div class="culto-card-accent"></div>
+          <div class="culto-card-day">Domingo</div>
+          <div class="culto-card-name">Culto da Família</div>
+          <div class="culto-card-time"><i class="fa-regular fa-clock"></i> 19:00</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos Conheça -->
+    <section class="about-section" id="nos-conheca" aria-labelledby="aboutHeading">
+      <div class="about-content">
+        <h2 class="about-title" id="aboutHeading">
+          NOSSA<br /><span>história</span><br />NOSSA FÉ
+        </h2>
+        <p class="about-text">
+          A IEQ Central nasceu com o propósito de levar a mensagem de Jesus de forma verdadeira, relevante e transformadora. Somos uma comunidade apaixonada por Deus, comprometida em viver a Palavra, servir pessoas e impactar nossa cidade com amor e fé.
+        </p>
+        <p class="about-text">
+          Nossa missão é formar discípulos, fortalecer famílias e criar um ambiente onde cada pessoa possa encontrar propósito, pertencimento e uma experiência real com Deus.
+        </p>
+        <div class="about-pillars" aria-label="Nossos pilares">
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-book-open"></i></div>
+            <div class="pillar-label">Palavra</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-hands-praying"></i></div>
+            <div class="pillar-label">Oração</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-music"></i></div>
+            <div class="pillar-label">Louvor</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="pillar-label">Missões</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-heart"></i></div>
+            <div class="pillar-label">Comunhão</div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon"><i class="fa-solid fa-cross"></i></div>
+            <div class="pillar-label">Salvação</div>
+          </div>
+        </div>
+        <!-- "Ver nossa história completa" button removed as requested -->
+      </div>
+      <div class="about-img" role="img" aria-label="Membros da igreja reunidos em comunhão"></div>
+    </section>
+
+    <!-- Fotos -->
+    <section class="gallery-section" id="fotos" aria-labelledby="fotosHeading">
+      <h2 class="section-title gallery-title" id="fotosHeading">NOSSA COMUNIDADE EM FOTOS</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img src="fotos/nossa comunidade1.jpg" alt="Nossa comunidade - foto 1" loading="lazy" />
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="fotos/nossa comunidade2.jpg" alt="Nossa comunidade - foto 2" loading="lazy" />
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="fotos/nossa comunidade3.jpg" alt="Nossa comunidade - foto 3" loading="lazy" />
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="fotos/nossa comunidade4.jpg" alt="Nossa comunidade - foto 4" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="location-section" aria-labelledby="localHeading">
+      <div class="location-info fade-in">
+        <h2 class="location-title" id="localHeading">VENHA NOS<br />VISITAR</h2>
+        <address class="location-address">
+          <i class="fa-solid fa-location-dot"></i> <strong>Endereço</strong><br />
+          Rua Claudino Protazio De Almeida 203<br />
+          Angatuba-SP<br />
+          CEP 18240-025<br /><br />
+          <i class="fa-solid fa-phone"></i> <strong>Telefone</strong><br />
+          +55 15 99649-6104<br /><br />
+        </address>
+        <a href="#contato" class="btn-cta btn-cta--accent">Entrar em Contato</a>
+      </div>
+      <div class="location-map" aria-label="Mapa de localização da igreja">
+        <iframe
+          src="https://www.google.com/maps?q=-23.49122630294178,-48.41094253758055&z=19&output=embed"
+          title="Localização do IEQ Central em Angatuba, SP"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Fale Conosco -->
+    <section class="contact-section" id="contato" aria-labelledby="contatoHeading">
+      <div class="contact-info fade-in">
+        <h2 id="contatoHeading">FALE<br />CONOSCO</h2>
+        <p>
+          Tem alguma dúvida, pedido de oração ou quer saber mais sobre nossa comunidade?
+          Entre em contato pelas nossas redes sociais ou fale diretamente com a gente pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="contact-cards">
+        <!-- WhatsApp Card -->
+        <div class="contact-card fade-in">
+          <div class="contact-card-top contact-card-top--whatsapp"></div>
+          <div class="contact-card-header">
+            <div class="contact-icon-wrap contact-icon-wrap--whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="contact-card-title">Fale conosco<br />no WhatsApp</div>
+              <div class="contact-card-subtitle">Respondemos em breve</div>
+            </div>
+          </div>
+          <p class="contact-card-body">
+            Nossa equipe está disponível para responder dúvidas, receber pedidos de oração e dar as boas-vindas a novos visitantes. Chama a gente!
+          </p>
+          <hr class="contact-divider" />
+          <div class="contact-availability">
+            <div class="contact-dot contact-dot--green"></div>
+            Fale Conosco
+          </div>
+          <a href="https://wa.me/5515996496104" target="_blank" rel="noopener noreferrer" class="btn-contact btn-contact--whatsapp" aria-label="Abrir conversa no WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i> Iniciar conversa
+          </a>
+        </div>
+
+        <!-- Instagram Card -->
+        <a href="instagram.html" class="contact-card contact-card--link fade-in" aria-label="Ver perfis do Instagram">
+          <div class="contact-card-top contact-card-top--instagram"></div>
+          <div class="contact-card-header">
+            <div class="contact-icon-wrap contact-icon-wrap--instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <div class="contact-card-title">Siga-nos<br />no Instagram</div>
+              <div class="contact-card-subtitle">Nossos perfis oficiais</div>
+            </div>
+          </div>
+          <p class="contact-card-body">
+            Acompanhe nossa programação, registros dos cultos, devocional diário e muito mais nos nossos perfis no Instagram.
+          </p>
+          <hr class="contact-divider" />
+          <div class="contact-availability">
+            <div class="contact-dot contact-dot--purple"></div>
+            Ver todos os perfis &rarr;
+          </div>
+          <span class="btn-contact btn-contact--instagram">
+            <i class="fa-brands fa-instagram"></i> Ver Instagram
+          </span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="17" y="4" width="6" height="32" rx="1" fill="#F18805"/>
+          <rect x="8" y="13" width="24" height="6" rx="1" fill="#F18805"/>
+        </svg>
+        <span class="footer-logo-name">IEQ Central</span>
+      </div>
+      <p class="footer-desc">
+        A IEQ Central existe para conectar pessoas a Deus, fortalecer famílias e impactar nossa cidade através do Evangelho de Jesus Cristo.
+      </p>
+    </div>
+
+    <nav class="footer-links" aria-label="Navegação do rodapé">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fotos">Fotos</a></li>
+        <li><a href="#nos-conheca">Nos Conheça</a></li>
+        <li><a href="#cultos">Cultos</a></li>
+        <li><a href="#contato">Fale Conosco</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-links">
+      <h4>Cultos</h4>
+      <ul>
+        <li>Ter: 20h &mdash; Encontro com Deus</li>
+        <li>Qui: 20h &mdash; Quinta da Vitória</li>
+        <li>Sáb: 20h &mdash; Sábado da Adoração</li>
+        <li>Dom: 19h &mdash; Culto da Família</li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 IEQ Central &mdash; Angatuba SP</span>
+      <span>Ministério Forte</span>
+      <span>Desenvolvido por <a href="https://www.instagram.com/devcodersystems" target="_blank" rel="noopener noreferrer" class="footer-devcoder">DevCoder</a></span>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-top" id="backTop" aria-label="Voltar ao topo">&#8593;</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

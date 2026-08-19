@@ -102,9 +102,10 @@ header {
 }
 
 .logo-cross {
-  width: clamp(28px, 5vw, 40px);
-  height: clamp(28px, 5vw, 40px);
+  width: clamp(38px, 6.5vw, 54px);
+  height: clamp(38px, 6.5vw, 54px);
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -381,7 +382,7 @@ nav[aria-label="Primary navigation"] a:hover {
 .hero-img {
   background:
     linear-gradient(rgba(26,0,101,0.35), rgba(26,0,101,0.35)),
-    url('fotos/ft1.jpg')
+    url('fotos/ft1.webp')
     center top / cover;
   position: relative;
   /* 3:4 em mobile — largura 100%, altura = largura * 4/3 */
@@ -651,7 +652,7 @@ nav[aria-label="Primary navigation"] a:hover {
   flex: 1;
   background:
     linear-gradient(rgba(26,0,101,0.2), rgba(26,0,101,0.2)),
-    url('fotos/nossa historia nossa fe.jpg')
+    url('fotos/nossa_historia_nossa_fe.webp')
     center center / cover;
   min-height: 300px;
 }
@@ -961,6 +962,12 @@ footer {
   margin-bottom: 1rem;
 }
 
+.footer-logo-img {
+  width: clamp(40px, 6vw, 52px);
+  height: clamp(40px, 6vw, 52px);
+  object-fit: contain;
+}
+
 .footer-logo-name {
   font-family: 'Syne', sans-serif;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
@@ -1206,6 +1213,13 @@ footer {
 }
 
 .ig-profile-avatar i { color: #fff; font-size: 1.5rem; }
+
+.ig-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 .ig-profile-name {
   font-family: 'Syne', sans-serif;

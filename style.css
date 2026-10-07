@@ -1,5 +1,50 @@
 /* ── Fonts ────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Syne:wght@700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+/* hospedadas no próprio site (SIL OFL), subconjunto latino — evita a ida ao Google Fonts */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('/fonts/space-grotesk.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/syne.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/playfair-display-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/playfair-display-700-italic.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ── Ícones ───────────────────────────────────────────────── */
+/* SVG embutido no HTML — Font Awesome Free 6.5.0 (ícones CC BY 4.0, fontawesome.com) */
+.fa-svg {
+  display: inline-block;
+  flex: none;
+  fill: currentColor;
+  vertical-align: -0.125em;
+  overflow: visible;
+}
 
 /* ── CSS Custom Properties ────────────────────────────────── */
 :root {
@@ -65,7 +110,7 @@ button { cursor: pointer; font-family: inherit; }
   pointer-events: none;
   z-index: 9999;
   opacity: 0.04;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Noise_Texture.png');
+  background-image: url('fotos/noise.webp');
 }
 
 /* ── Header ───────────────────────────────────────────────── */
@@ -315,7 +360,7 @@ nav[aria-label="Primary navigation"] a:hover {
   align-items: center;
   gap: 0.5rem;
   background: var(--orange);
-  color: #fff;
+  color: var(--primary);
   padding: 0.3rem 0.8rem;
   font-size: clamp(0.65rem, 1.5vw, 0.75rem);
   font-weight: 800;
@@ -325,7 +370,7 @@ nav[aria-label="Primary navigation"] a:hover {
   width: fit-content;
 }
 
-.hero-eyebrow i { font-size: 0.7rem; }
+.hero-eyebrow .fa-svg { font-size: 0.7rem; }
 
 .hero-title {
   font-family: 'Syne', sans-serif;
@@ -403,7 +448,7 @@ nav[aria-label="Primary navigation"] a:hover {
   bottom: 1.25rem;
   right: 1.25rem;
   background: var(--orange);
-  color: #fff;
+  color: var(--primary);
   border-radius: 50%;
   width: clamp(80px, 14vw, 140px);
   height: clamp(80px, 14vw, 140px);
@@ -563,7 +608,7 @@ nav[aria-label="Primary navigation"] a:hover {
   color: #555;
 }
 
-.culto-card-time i { color: var(--secondary); font-size: 0.9rem; }
+.culto-card-time .fa-svg { color: var(--secondary); font-size: 0.9rem; }
 
 .culto-card-accent {
   position: absolute;
@@ -747,7 +792,7 @@ nav[aria-label="Primary navigation"] a:hover {
   font-style: normal;
 }
 
-.location-address i { color: var(--accent); margin-right: 0.35rem; }
+.location-address .fa-svg { color: var(--accent); margin-right: 0.35rem; }
 
 .location-map {
   flex: 1.2;
@@ -848,7 +893,7 @@ nav[aria-label="Primary navigation"] a:hover {
   flex-shrink: 0;
 }
 
-.contact-icon-wrap i { color: #fff; font-size: 1.5rem; }
+.contact-icon-wrap .fa-svg { color: #fff; font-size: 1.5rem; }
 
 .contact-icon-wrap--whatsapp { background: #25D366; }
 .contact-icon-wrap--instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
@@ -983,7 +1028,7 @@ footer {
   font-size: clamp(0.85rem, 1.5vw, 0.95rem);
 }
 
-.footer-links h4 {
+.footer-links h3 {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -1116,7 +1161,7 @@ footer {
   align-items: center;
   gap: 0.5rem;
   background: var(--orange);
-  color: #fff;
+  color: var(--primary);
   padding: 0.3rem 0.9rem;
   font-size: clamp(0.65rem, 1.5vw, 0.75rem);
   font-weight: 800;
@@ -1212,7 +1257,7 @@ footer {
   flex-shrink: 0;
 }
 
-.ig-profile-avatar i { color: #fff; font-size: 1.5rem; }
+.ig-profile-avatar .fa-svg { color: #fff; font-size: 1.5rem; }
 
 .ig-profile-avatar img {
   width: 100%;

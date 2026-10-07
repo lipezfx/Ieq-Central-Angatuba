@@ -28,10 +28,8 @@
   <link rel="icon" href="/fotos/favicon-48.png" type="image/png" sizes="48x48" />
   <link rel="icon" href="/fotos/icon.webp" type="image/webp" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=Syne:wght@700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preload" href="/fonts/syne.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -40,7 +38,7 @@
 
   <!-- Header -->
   <header>
-    <a href="/" class="logo" aria-label="IEQ Central — Início">
+    <a href="/" class="logo" aria-label="IEQ Central Angatuba SP — Início">
       <img class="logo-cross" src="fotos/logo interna site.webp" alt="" aria-hidden="true" />
       <div class="logo-text">
         <span class="logo-name">IEQ Central</span>
@@ -76,7 +74,7 @@
 
     <!-- Page Hero -->
     <section class="page-hero" aria-labelledby="igHeading">
-      <span class="page-hero-eyebrow"><i class="fa-brands fa-instagram"></i> Redes Sociais</span>
+      <span class="page-hero-eyebrow"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Redes Sociais</span>
       <h1 class="page-hero-title" id="igHeading">
         NOSSO<br /><span>Instagram</span>
       </h1>
@@ -98,7 +96,7 @@
       <div class="ig-profiles-grid">
 
         <!-- Card 1: Perfil Principal -->
-        <a href="https://www.instagram.com/quadrangularcentralangatuba" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="Quadrangular Angatuba no Instagram">
+        <a href="https://www.instagram.com/quadrangularcentralangatuba" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in">
           <div class="ig-profile-avatar">
             <img src="fotos/foto_ieq_main.webp" alt="Quadrangular Angatuba" />
           </div>
@@ -109,11 +107,11 @@
           <p class="ig-profile-desc">
             Perfil oficial da IEQ Central de Angatuba. Programação, cultos, avisos e muito mais.
           </p>
-          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+          <span class="ig-profile-cta"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Seguir</span>
         </a>
 
         <!-- Card 2: Juventude -->
-        <a href="https://www.instagram.com/juventude_ieq_central" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="Juventude IEQ Central no Instagram">
+        <a href="https://www.instagram.com/juventude_ieq_central" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in">
           <div class="ig-profile-avatar">
             <img src="fotos/juventude_ieq.webp" alt="Juventude IEQ Central" />
           </div>
@@ -124,11 +122,11 @@
           <p class="ig-profile-desc">
             Ministério jovem da IEQ Central. Eventos, células, retiros e conteúdo para a nova geração.
           </p>
-          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+          <span class="ig-profile-cta"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Seguir</span>
         </a>
 
         <!-- Card 3: Grupo Missionário Crianças -->
-        <a href="https://www.instagram.com/ieq.grupo.missionario.criancas" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Grupo Missionário Crianças no Instagram">
+        <a href="https://www.instagram.com/ieq.grupo.missionario.criancas" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in">
           <div class="ig-profile-avatar">
             <img src="fotos/criancas_ieq.webp" alt="GMC — Crianças" />
           </div>
@@ -139,11 +137,11 @@
           <p class="ig-profile-desc">
             Ministério infantil e escola bíblica. Atividades, histórias bíblicas e momentos especiais das crianças.
           </p>
-          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+          <span class="ig-profile-cta"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Seguir</span>
         </a>
 
         <!-- Card 4: Grupo Missionário Mulheres -->
-        <a href="https://www.instagram.com/ieq.grupo.missionario.mulheres" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Grupo Missionário Mulheres no Instagram">
+        <a href="https://www.instagram.com/ieq.grupo.missionario.mulheres" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in">
           <div class="ig-profile-avatar">
             <img src="fotos/mulheres_ieq.webp" alt="GMM — Mulheres" />
           </div>
@@ -154,11 +152,11 @@
           <p class="ig-profile-desc">
             Ministério de mulheres. Encontros, conteúdo sobre família, fé e vida cristã.
           </p>
-          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+          <span class="ig-profile-cta"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Seguir</span>
         </a>
 
         <!-- Card 5: Grupo Missionário Homens -->
-        <a href="https://www.instagram.com/ieq.grupo.missionario.homens/" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Grupo Missionário Homens no Instagram">
+        <a href="https://www.instagram.com/ieq.grupo.missionario.homens/" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in">
           <div class="ig-profile-avatar">
             <img src="fotos/homens_ieq.webp" alt="GMH - Homens" />
           </div>
@@ -169,11 +167,11 @@
           <p class="ig-profile-desc">
             Ministério de homens. Encontros, discipulado e vida cristã.
           </p>
-          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+          <span class="ig-profile-cta"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Seguir</span>
         </a>
 
         <!-- Card 6: IEQ Central Angatuba (perfil oficial alternativo) -->
-        <a href="https://www.instagram.com/ieqcentralangatuba" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in" aria-label="IEQ Central Angatuba no Instagram">
+        <a href="https://www.instagram.com/ieqcentralangatuba" target="_blank" rel="noopener noreferrer" class="ig-profile-card fade-in">
           <div class="ig-profile-avatar">
             <img src="fotos/foto_ieq_mauri.webp" alt="IEQ Central Angatuba" />
           </div>
@@ -184,7 +182,7 @@
           <p class="ig-profile-desc">
             Missões, evangelismo e registros das ações da nossa comunidade em Angatuba e região.
           </p>
-          <span class="ig-profile-cta"><i class="fa-brands fa-instagram"></i> Seguir</span>
+          <span class="ig-profile-cta"><svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Seguir</span>
         </a>
       </div>
     </section>
@@ -193,7 +191,7 @@
 
   <!-- Back link -->
   <a href="/" class="ig-back-link">
-    <i class="fa-solid fa-arrow-left"></i> Voltar para o início
+    <svg class="fa-svg" viewBox="0 0 448 512" width="0.875em" height="1em" aria-hidden="true" focusable="false"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> Voltar para o início
   </a>
 
   <!-- Footer -->
@@ -210,7 +208,7 @@
     </div>
 
     <nav class="footer-links" aria-label="Navegação do rodapé">
-      <h4>Navegação</h4>
+      <h3>Navegação</h3>
       <ul>
         <li><a href="/#home">Home</a></li>
         <li><a href="/#fotos">Fotos</a></li>
@@ -221,7 +219,7 @@
     </nav>
 
     <div class="footer-links">
-      <h4>Cultos</h4>
+      <h3>Cultos</h3>
       <ul>
         <li>Ter: 20h &mdash; Encontro com Deus</li>
         <li>Qui: 20h &mdash; Quinta da Vitória</li>

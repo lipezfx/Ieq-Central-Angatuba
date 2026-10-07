@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ieqcentralangatuba.com.br/sitemap.xml

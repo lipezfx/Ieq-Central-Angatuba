@@ -117,3 +117,21 @@ const io = new IntersectionObserver(
   { threshold: 0.1 }
 );
 document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+/* ── Mapa sob demanda ──────────────────────────────────────── */
+/* O iframe do Google Maps carrega ~400 KB de JS; só define o src quando a seção chega perto da tela */
+const mapFrames = document.querySelectorAll('iframe[data-src]');
+if ('IntersectionObserver' in window) {
+  const mapIo = new IntersectionObserver(
+    (entries) => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.src = entry.target.dataset.src;
+        mapIo.unobserve(entry.target);
+      }
+    }),
+    { rootMargin: '300px 0px' }
+  );
+  mapFrames.forEach(el => mapIo.observe(el));
+} else {
+  mapFrames.forEach(el => { el.src = el.dataset.src; });
+}

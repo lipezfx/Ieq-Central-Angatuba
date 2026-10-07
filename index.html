@@ -29,7 +29,8 @@
   <link rel="icon" href="/fotos/icon.webp" type="image/webp" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <!-- foto do topo é o maior elemento da tela: começa a baixar antes do CSS -->
-  <link rel="preload" as="image" href="/fotos/ft1.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/fotos/ft1-720.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)" />
+  <link rel="preload" as="image" href="/fotos/ft1.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)" />
   <link rel="preload" href="/fonts/syne.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="style.css" />
@@ -230,16 +231,16 @@
       <h2 class="section-title gallery-title" id="fotosHeading">NOSSA COMUNIDADE EM FOTOS</h2>
       <div class="gallery-grid">
         <div class="gallery-item fade-in">
-          <img src="fotos/nossa_comunidade1.webp" alt="Nossa comunidade - foto 1" loading="lazy" />
+          <img src="fotos/nossa_comunidade1.webp" srcset="fotos/nossa_comunidade1-400.webp 400w, fotos/nossa_comunidade1.webp 720w" sizes="(min-width: 768px) 25vw, 50vw" alt="Nossa comunidade - foto 1" loading="lazy" decoding="async" />
         </div>
         <div class="gallery-item fade-in">
-          <img src="fotos/nossa_comunidade2.webp" alt="Nossa comunidade - foto 2" loading="lazy" />
+          <img src="fotos/nossa_comunidade2.webp" srcset="fotos/nossa_comunidade2-400.webp 400w, fotos/nossa_comunidade2.webp 720w" sizes="(min-width: 768px) 25vw, 50vw" alt="Nossa comunidade - foto 2" loading="lazy" decoding="async" />
         </div>
         <div class="gallery-item fade-in">
-          <img src="fotos/nossa_comunidade3.webp" alt="Nossa comunidade - foto 3" loading="lazy" />
+          <img src="fotos/nossa_comunidade3.webp" srcset="fotos/nossa_comunidade3-400.webp 400w, fotos/nossa_comunidade3.webp 960w" sizes="(min-width: 768px) 25vw, 50vw" alt="Nossa comunidade - foto 3" loading="lazy" decoding="async" />
         </div>
         <div class="gallery-item fade-in">
-          <img src="fotos/nossa_comunidade4.webp" alt="Nossa comunidade - foto 4" loading="lazy" />
+          <img src="fotos/nossa_comunidade4.webp" srcset="fotos/nossa_comunidade4-400.webp 400w, fotos/nossa_comunidade4.webp 720w" sizes="(min-width: 768px) 25vw, 50vw" alt="Nossa comunidade - foto 4" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -259,8 +260,9 @@
         <a href="#contato" class="btn-cta btn-cta--accent">Entrar em Contato</a>
       </div>
       <div class="location-map" aria-label="Mapa de localização da igreja">
+        <!-- o mapa (~400 KB de JS do Google) só carrega quando o visitante rola até perto dele; ver script.js -->
         <iframe
-          src="https://www.google.com/maps?q=-23.49122630294178,-48.41094253758055&z=19&output=embed"
+          data-src="https://www.google.com/maps?q=-23.49122630294178,-48.41094253758055&z=19&output=embed"
           title="Localização do IEQ Central em Angatuba, SP"
           allowfullscreen=""
           loading="lazy"

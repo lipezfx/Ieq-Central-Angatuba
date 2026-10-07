@@ -427,7 +427,7 @@ nav[aria-label="Primary navigation"] a:hover {
 .hero-img {
   background:
     linear-gradient(rgba(26,0,101,0.35), rgba(26,0,101,0.35)),
-    url('fotos/ft1.webp')
+    url('fotos/ft1-720.webp')
     center top / cover;
   position: relative;
   /* 3:4 em mobile — largura 100%, altura = largura * 4/3 */
@@ -439,6 +439,9 @@ nav[aria-label="Primary navigation"] a:hover {
   .hero-img {
     aspect-ratio: unset;
     min-height: auto;
+    background-image:
+      linear-gradient(rgba(26,0,101,0.35), rgba(26,0,101,0.35)),
+      url('fotos/ft1.webp');
   }
 }
 

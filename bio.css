@@ -294,6 +294,106 @@ a {
   color: var(--purple-2);
 }
 
+/* ---------- Bio sem rolagem ----------
+   --u vale 1px quando a tela comporta o layout (~806px de altura, 370px de largura)
+   e encolhe proporcionalmente em telas mais baixas ou mais estreitas,
+   para tudo caber na tela sem rolar. O rodapé (~40px) não escala, por isso
+   é descontado da altura: 766 = altura escalável do layout em --u. */
+
+.bio-fit {
+  --u: min(1px, calc((100vh - 40px) / 766), calc(100vw / 370));
+  --uw: min(1px, calc(100vw / 390)); /* só largura: usado no rodapé */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .bio-fit {
+    --u: min(1px, calc((100dvh - 40px) / 766), calc(100vw / 370));
+    min-height: 100dvh;
+  }
+}
+
+/* em telas altas, a sobra se divide entre o topo e o rodapé */
+.bio-fit .bio-header {
+  margin-top: auto;
+  padding-top: calc(50 * var(--u));
+}
+
+.bio-fit .bio-header::before {
+  width: calc(220 * var(--u));
+  height: calc(220 * var(--u));
+}
+
+.bio-fit .bio-logo {
+  width: calc(114 * var(--u));
+}
+
+.bio-fit .bio-title {
+  margin-top: calc(3 * var(--u));
+  font-size: calc(39 * var(--u));
+}
+
+.bio-fit .bio-city {
+  margin-top: calc(8.5 * var(--u));
+  font-size: calc(18 * var(--u));
+}
+
+.bio-fit .bio-cta {
+  margin-top: calc(15 * var(--u));
+  font-size: calc(14.5 * var(--u));
+}
+
+.bio-fit .bio-links {
+  gap: calc(9 * var(--u));
+  margin-top: calc(24 * var(--u));
+}
+
+.bio-fit .bio-card {
+  height: calc(70 * var(--u));
+}
+
+.bio-fit .bio-icon {
+  width: calc(38 * var(--u));
+  height: calc(38 * var(--u));
+}
+
+.bio-fit .bio-divider {
+  height: calc(34 * var(--u));
+}
+
+.bio-fit .bio-label {
+  font-size: calc(14.5 * var(--u));
+}
+
+.bio-fit .bio-chevron {
+  width: calc(20 * var(--u));
+  height: calc(20 * var(--u));
+}
+
+.bio-fit .bio-footer {
+  gap: calc(12 * var(--uw));
+  margin-top: auto;
+  padding-top: calc(6 * var(--u));
+  padding-right: calc(12 * var(--uw));
+  padding-bottom: max(calc(4 * var(--u)), env(safe-area-inset-bottom));
+}
+
+.bio-fit .bio-footer-left strong {
+  font-size: calc(9 * var(--uw));
+  white-space: nowrap;
+}
+
+.bio-fit .bio-footer-left span {
+  font-size: calc(9.2 * var(--uw));
+  white-space: nowrap;
+}
+
+.bio-fit .bio-footer-right {
+  font-size: calc(9.3 * var(--uw));
+}
+
 /* ---------- Página 404 ---------- */
 
 .bio-404 {
